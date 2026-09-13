@@ -1,0 +1,23 @@
+/**
+ * index.css
+ *
+ * Global stylesheet. We only need the three Tailwind directives — every
+ * other style in this app comes from Tailwind utility classes directly
+ * inside components. Keeping global CSS this small is intentional: it
+ * forces styling decisions to live next to the markup they affect,
+ * which is much easier to maintain in a large app.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* A couple of small global touches that don't fit as a utility class. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #C99A2E33 transparent;
+}
+
+:focus-visible {
+  outline: 2px solid #A6790A;
+  outline-offset: 2px;
+}
